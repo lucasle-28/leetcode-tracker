@@ -1,4 +1,4 @@
-// Last updated: 9/15/2025, 1:26:06 AM
+// Last updated: 9/15/2025, 1:26:24 AM
 import java.util.HashMap;
 class Solution {
     public int[] twoSum(int[] nums, int target) {
@@ -9,6 +9,7 @@ class Solution {
             if (h.containsKey(comp)) {
                 solution[0] = ii;
                 solution[1] = h.get(comp);
+                return solution;
             }
             else {
                 h.put(nums[ii],ii);
