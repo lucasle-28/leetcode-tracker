@@ -1,4 +1,4 @@
-// Last updated: 9/15/2025, 1:51:59 AM
+// Last updated: 9/15/2025, 1:52:19 AM
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -10,6 +10,7 @@
  * }
  */
  //started at 1:29 AM 9/15/2025
+ //finished at 1:52 AM 9/15/2025
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
