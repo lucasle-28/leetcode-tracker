@@ -1,13 +1,9 @@
-// Last updated: 10/25/2025, 2:48:55 PM
+// Last updated: 10/25/2025, 3:40:29 PM
 class Solution {
-    public int hammingWeight(int n) {
-        String strN = Integer.toBinaryString(n);
-        int count = 0;
-        for (int ii = 0; ii < strN.length();ii++) {
-            if (strN.charAt(ii) == '1') {
-                count++;
-            }
+    public boolean isPowerOfTwo(int n) {
+        if (n <= 0) {
+            return false;
         }
-        return count;
+        return ((n & (n - 1) )== 0);
     }
 }
