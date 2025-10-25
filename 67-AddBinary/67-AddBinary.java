@@ -1,12 +1,12 @@
-// Last updated: 10/25/2025, 11:57:05 AM
+// Last updated: 10/25/2025, 12:06:12 PM
 class Solution {
     public String addBinary(String a, String b) {
-        StringBuilder result = new StringBuilder("");
+        StringBuilder result = new StringBuilder();
         int carry = 0;
         int ii = a.length() - 1;
         int jj = b.length() - 1;
         while (ii >= 0 || jj >= 0 || carry > 0) {
-            int sum;
+            int sum = 0;
             int intA;
             int intB;
             if (ii >= 0) {
@@ -22,7 +22,7 @@ class Solution {
                 intB = 0;
             }
             sum = intA + intB + carry;
-            result.append(sum%2);
+            result.append(sum % 2);
             carry = sum/2;
             ii--;
             jj--;
